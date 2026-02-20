@@ -1,0 +1,17 @@
+{
+  "name": "poker-settle-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "poker-settle-app": "file:.."
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
