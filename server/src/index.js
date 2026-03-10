@@ -17,9 +17,4 @@ const clientDist = path.join(__dirname, '..', '..', 'client', 'dist');
 app.use(express.static(clientDist));
 app.get('*', (req, res) => res.sendFile(path.join(clientDist, 'index.html')));
 
-if (!process.env.MONGODB_URI) {
-  console.error('ERROR: MONGODB_URI environment variable is not set');
-  process.exit(1);
-}
-
 app.listen(PORT, () => console.log(`Poker Board server running on http://localhost:${PORT}`));
